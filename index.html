@@ -55,3 +55,32 @@
 </body>
 </html>
 <link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilustração Animada</title>
+    <style>
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        svg {
+            width: 200px;
+            display: block;
+            margin: 50px auto;
+        }
+
+        .circle {
+            animation: bounce 1s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <svg viewBox="0 0 100 100">
+        <circle class="circle" cx="50" cy="50" r="40" fill="#ff5733" />
+    </svg>
+</body>
+</html>
